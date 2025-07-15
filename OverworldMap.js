@@ -8,7 +8,7 @@ class OverworldMap {
 	this.upperImage = new Image();
 	this.upperImage.src = config.upperSrc;
     }
-
+n
     isLoaded() {
 	return this.lowerImage.complete && this.lowerImage.naturalWidth !== 0;
     }
