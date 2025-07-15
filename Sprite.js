@@ -33,8 +33,10 @@ class Sprite {
 
     draw(ctx) {
 	// grid 16x16
-	const x = this.gameObject.x * 16 - 8; 
-	const y = this.gameObject.y * 16 - 18;
+	// const x = this.gameObject.x * 16 - 8; 
+	// const y = this.gameObject.y * 16 - 18;
+	const x = this.gameObject.x - 8;  // this is grid based movemnent
+	const y = this.gameObject.y - 18; // this is grid based movemnent
 
 	// Shadow
 	this.isShadowLoaded && ctx.drawImage(this.shadow, x, y);
